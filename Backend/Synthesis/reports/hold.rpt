@@ -1,0 +1,3072 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 20
+Design : SYS_TOP
+Version: K-2015.06
+Date   : Wed Oct 23 22:48:29 2024
+****************************************
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c   Library: scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c
+Wire Load Model Mode: top
+
+  Startpoint: register_BLOCK/Reg_File_reg[0][7]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU_BLOCK/ALU_OUT_reg[6]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  register_BLOCK/Reg_File_reg[0][7]/CK (DFFRHQX1M)        0.00       0.00 r
+  register_BLOCK/Reg_File_reg[0][7]/Q (DFFRHQX1M)         0.27       0.27 f
+  register_BLOCK/REG0[7] (register)                       0.00       0.27 f
+  ALU_BLOCK/A[7] (ALU)                                    0.00       0.27 f
+  ALU_BLOCK/U3/Y (BUFX6M)                                 0.15       0.42 f
+  ALU_BLOCK/U161/Y (AOI22XLM)                             0.14       0.56 r
+  ALU_BLOCK/U152/Y (AOI31X2M)                             0.10       0.66 f
+  ALU_BLOCK/ALU_OUT_reg[6]/D (DFFRQX2M)                   0.00       0.66 f
+  data arrival time                                                  0.66
+
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_BLOCK/ALU_OUT_reg[6]/CK (DFFRQX2M)                  0.00       0.00 r
+  library hold time                                      -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.66
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.69
+
+
+  Startpoint: SYS_CTRL_BLOCK/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU_BLOCK/OUT_VALID_reg
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SYS_CTRL_BLOCK/current_state_reg[2]/CK (DFFRQX2M)       0.00       0.00 r
+  SYS_CTRL_BLOCK/current_state_reg[2]/Q (DFFRQX2M)        0.40       0.40 r
+  SYS_CTRL_BLOCK/U35/Y (NOR2X2M)                          0.08       0.48 f
+  SYS_CTRL_BLOCK/U12/Y (NAND3X2M)                         0.12       0.59 r
+  SYS_CTRL_BLOCK/U10/Y (NOR2X2M)                          0.09       0.68 f
+  SYS_CTRL_BLOCK/EN (SYS_CTRL)                            0.00       0.68 f
+  ALU_BLOCK/EN (ALU)                                      0.00       0.68 f
+  ALU_BLOCK/OUT_VALID_reg/D (DFFRQX2M)                    0.00       0.68 f
+  data arrival time                                                  0.68
+
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_BLOCK/OUT_VALID_reg/CK (DFFRQX2M)                   0.00       0.00 r
+  library hold time                                      -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.71
+
+
+  Startpoint: register_BLOCK/Reg_File_reg[0][7]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU_BLOCK/ALU_OUT_reg[7]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  register_BLOCK/Reg_File_reg[0][7]/CK (DFFRHQX1M)        0.00       0.00 r
+  register_BLOCK/Reg_File_reg[0][7]/Q (DFFRHQX1M)         0.30       0.30 r
+  register_BLOCK/REG0[7] (register)                       0.00       0.30 r
+  ALU_BLOCK/A[7] (ALU)                                    0.00       0.30 r
+  ALU_BLOCK/U3/Y (BUFX6M)                                 0.14       0.44 r
+  ALU_BLOCK/U153/Y (OA22X2M)                              0.17       0.60 r
+  ALU_BLOCK/U87/Y (AOI31X2M)                              0.08       0.69 f
+  ALU_BLOCK/ALU_OUT_reg[7]/D (DFFRQX2M)                   0.00       0.69 f
+  data arrival time                                                  0.69
+
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_BLOCK/ALU_OUT_reg[7]/CK (DFFRQX2M)                  0.00       0.00 r
+  library hold time                                      -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: register_BLOCK/Reg_File_reg[1][0]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU_BLOCK/ALU_OUT_reg[0]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  register_BLOCK/Reg_File_reg[1][0]/CK (DFFRHQX8M)        0.00       0.00 r
+  register_BLOCK/Reg_File_reg[1][0]/Q (DFFRHQX8M)         0.33       0.33 f
+  register_BLOCK/REG1[0] (register)                       0.00       0.33 f
+  ALU_BLOCK/B[0] (ALU)                                    0.00       0.33 f
+  ALU_BLOCK/sub_37/B[0] (ALU_DW01_sub_0)                  0.00       0.33 f
+  ALU_BLOCK/sub_37/U11/Y (INVXLM)                         0.10       0.43 r
+  ALU_BLOCK/sub_37/U6/Y (XNOR2X2M)                        0.06       0.49 f
+  ALU_BLOCK/sub_37/DIFF[0] (ALU_DW01_sub_0)               0.00       0.49 f
+  ALU_BLOCK/U147/Y (NAND2X2M)                             0.08       0.57 r
+  ALU_BLOCK/U107/Y (NAND3X2M)                             0.11       0.68 f
+  ALU_BLOCK/U12/Y (NOR2X4M)                               0.11       0.79 r
+  ALU_BLOCK/U168/Y (AOI211X2M)                            0.07       0.86 f
+  ALU_BLOCK/ALU_OUT_reg[0]/D (DFFRQX1M)                   0.00       0.86 f
+  data arrival time                                                  0.86
+
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_BLOCK/ALU_OUT_reg[0]/CK (DFFRQX1M)                  0.00       0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.86
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.87
+
+
+  Startpoint: register_BLOCK/Reg_File_reg[1][2]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU_BLOCK/ALU_OUT_reg[2]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  register_BLOCK/Reg_File_reg[1][2]/CK (DFFRHQX2M)        0.00       0.00 r
+  register_BLOCK/Reg_File_reg[1][2]/Q (DFFRHQX2M)         0.34       0.34 r
+  register_BLOCK/REG1[2] (register)                       0.00       0.34 r
+  ALU_BLOCK/B[2] (ALU)                                    0.00       0.34 r
+  ALU_BLOCK/U22/Y (OAI222XLM)                             0.21       0.55 f
+  ALU_BLOCK/U81/Y (AOI211X2M)                             0.18       0.73 r
+  ALU_BLOCK/U79/Y (AOI31X2M)                              0.11       0.85 f
+  ALU_BLOCK/ALU_OUT_reg[2]/D (DFFRQX2M)                   0.00       0.85 f
+  data arrival time                                                  0.85
+
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_BLOCK/ALU_OUT_reg[2]/CK (DFFRQX2M)                  0.00       0.00 r
+  library hold time                                      -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.85
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.88
+
+
+  Startpoint: register_BLOCK/Reg_File_reg[0][7]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU_BLOCK/ALU_OUT_reg[8]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  register_BLOCK/Reg_File_reg[0][7]/CK (DFFRHQX1M)        0.00       0.00 r
+  register_BLOCK/Reg_File_reg[0][7]/Q (DFFRHQX1M)         0.27       0.27 f
+  register_BLOCK/REG0[7] (register)                       0.00       0.27 f
+  ALU_BLOCK/A[7] (ALU)                                    0.00       0.27 f
+  ALU_BLOCK/U3/Y (BUFX6M)                                 0.15       0.42 f
+  ALU_BLOCK/U159/Y (INVXLM)                               0.16       0.58 r
+  ALU_BLOCK/U90/Y (AOI2BB2XLM)                            0.21       0.79 r
+  ALU_BLOCK/U88/Y (AOI21X2M)                              0.08       0.87 f
+  ALU_BLOCK/ALU_OUT_reg[8]/D (DFFRQX2M)                   0.00       0.87 f
+  data arrival time                                                  0.87
+
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_BLOCK/ALU_OUT_reg[8]/CK (DFFRQX2M)                  0.00       0.00 r
+  library hold time                                      -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.87
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.89
+
+
+  Startpoint: register_BLOCK/Reg_File_reg[0][1]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU_BLOCK/ALU_OUT_reg[1]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  register_BLOCK/Reg_File_reg[0][1]/CK (DFFRQX2M)         0.00       0.00 r
+  register_BLOCK/Reg_File_reg[0][1]/Q (DFFRQX2M)          0.37       0.37 r
+  register_BLOCK/REG0[1] (register)                       0.00       0.37 r
+  ALU_BLOCK/A[1] (ALU)                                    0.00       0.37 r
+  ALU_BLOCK/U126/Y (BUFX2M)                               0.25       0.63 r
+  ALU_BLOCK/U78/Y (MX2X2M)                                0.17       0.80 r
+  ALU_BLOCK/U76/Y (AOI31X2M)                              0.08       0.89 f
+  ALU_BLOCK/ALU_OUT_reg[1]/D (DFFRQX1M)                   0.00       0.89 f
+  data arrival time                                                  0.89
+
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_BLOCK/ALU_OUT_reg[1]/CK (DFFRQX1M)                  0.00       0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.89
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.90
+
+
+  Startpoint: SYS_CTRL_BLOCK/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU_BLOCK/ALU_OUT_reg[15]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SYS_CTRL_BLOCK/current_state_reg[2]/CK (DFFRQX2M)       0.00       0.00 r
+  SYS_CTRL_BLOCK/current_state_reg[2]/Q (DFFRQX2M)        0.40       0.40 r
+  SYS_CTRL_BLOCK/U35/Y (NOR2X2M)                          0.08       0.48 f
+  SYS_CTRL_BLOCK/U12/Y (NAND3X2M)                         0.12       0.59 r
+  SYS_CTRL_BLOCK/U10/Y (NOR2X2M)                          0.09       0.68 f
+  SYS_CTRL_BLOCK/EN (SYS_CTRL)                            0.00       0.68 f
+  ALU_BLOCK/EN (ALU)                                      0.00       0.68 f
+  ALU_BLOCK/U61/Y (NAND2X2M)                              0.15       0.84 r
+  ALU_BLOCK/U29/Y (OAI2BB1X2M)                            0.07       0.91 f
+  ALU_BLOCK/ALU_OUT_reg[15]/D (DFFRQX2M)                  0.00       0.91 f
+  data arrival time                                                  0.91
+
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_BLOCK/ALU_OUT_reg[15]/CK (DFFRQX2M)                 0.00       0.00 r
+  library hold time                                      -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.93
+
+
+  Startpoint: SYS_CTRL_BLOCK/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU_BLOCK/ALU_OUT_reg[14]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SYS_CTRL_BLOCK/current_state_reg[2]/CK (DFFRQX2M)       0.00       0.00 r
+  SYS_CTRL_BLOCK/current_state_reg[2]/Q (DFFRQX2M)        0.40       0.40 r
+  SYS_CTRL_BLOCK/U35/Y (NOR2X2M)                          0.08       0.48 f
+  SYS_CTRL_BLOCK/U12/Y (NAND3X2M)                         0.12       0.59 r
+  SYS_CTRL_BLOCK/U10/Y (NOR2X2M)                          0.09       0.68 f
+  SYS_CTRL_BLOCK/EN (SYS_CTRL)                            0.00       0.68 f
+  ALU_BLOCK/EN (ALU)                                      0.00       0.68 f
+  ALU_BLOCK/U61/Y (NAND2X2M)                              0.15       0.84 r
+  ALU_BLOCK/U32/Y (OAI2BB1X2M)                            0.07       0.91 f
+  ALU_BLOCK/ALU_OUT_reg[14]/D (DFFRQX2M)                  0.00       0.91 f
+  data arrival time                                                  0.91
+
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_BLOCK/ALU_OUT_reg[14]/CK (DFFRQX2M)                 0.00       0.00 r
+  library hold time                                      -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.93
+
+
+  Startpoint: SYS_CTRL_BLOCK/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU_BLOCK/ALU_OUT_reg[13]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SYS_CTRL_BLOCK/current_state_reg[2]/CK (DFFRQX2M)       0.00       0.00 r
+  SYS_CTRL_BLOCK/current_state_reg[2]/Q (DFFRQX2M)        0.40       0.40 r
+  SYS_CTRL_BLOCK/U35/Y (NOR2X2M)                          0.08       0.48 f
+  SYS_CTRL_BLOCK/U12/Y (NAND3X2M)                         0.12       0.59 r
+  SYS_CTRL_BLOCK/U10/Y (NOR2X2M)                          0.09       0.68 f
+  SYS_CTRL_BLOCK/EN (SYS_CTRL)                            0.00       0.68 f
+  ALU_BLOCK/EN (ALU)                                      0.00       0.68 f
+  ALU_BLOCK/U61/Y (NAND2X2M)                              0.15       0.84 r
+  ALU_BLOCK/U31/Y (OAI2BB1X2M)                            0.07       0.91 f
+  ALU_BLOCK/ALU_OUT_reg[13]/D (DFFRQX2M)                  0.00       0.91 f
+  data arrival time                                                  0.91
+
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_BLOCK/ALU_OUT_reg[13]/CK (DFFRQX2M)                 0.00       0.00 r
+  library hold time                                      -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.93
+
+
+  Startpoint: SYS_CTRL_BLOCK/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU_BLOCK/ALU_OUT_reg[12]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SYS_CTRL_BLOCK/current_state_reg[2]/CK (DFFRQX2M)       0.00       0.00 r
+  SYS_CTRL_BLOCK/current_state_reg[2]/Q (DFFRQX2M)        0.40       0.40 r
+  SYS_CTRL_BLOCK/U35/Y (NOR2X2M)                          0.08       0.48 f
+  SYS_CTRL_BLOCK/U12/Y (NAND3X2M)                         0.12       0.59 r
+  SYS_CTRL_BLOCK/U10/Y (NOR2X2M)                          0.09       0.68 f
+  SYS_CTRL_BLOCK/EN (SYS_CTRL)                            0.00       0.68 f
+  ALU_BLOCK/EN (ALU)                                      0.00       0.68 f
+  ALU_BLOCK/U61/Y (NAND2X2M)                              0.15       0.84 r
+  ALU_BLOCK/U30/Y (OAI2BB1X2M)                            0.07       0.91 f
+  ALU_BLOCK/ALU_OUT_reg[12]/D (DFFRQX2M)                  0.00       0.91 f
+  data arrival time                                                  0.91
+
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_BLOCK/ALU_OUT_reg[12]/CK (DFFRQX2M)                 0.00       0.00 r
+  library hold time                                      -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.93
+
+
+  Startpoint: SYS_CTRL_BLOCK/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU_BLOCK/ALU_OUT_reg[11]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SYS_CTRL_BLOCK/current_state_reg[2]/CK (DFFRQX2M)       0.00       0.00 r
+  SYS_CTRL_BLOCK/current_state_reg[2]/Q (DFFRQX2M)        0.40       0.40 r
+  SYS_CTRL_BLOCK/U35/Y (NOR2X2M)                          0.08       0.48 f
+  SYS_CTRL_BLOCK/U12/Y (NAND3X2M)                         0.12       0.59 r
+  SYS_CTRL_BLOCK/U10/Y (NOR2X2M)                          0.09       0.68 f
+  SYS_CTRL_BLOCK/EN (SYS_CTRL)                            0.00       0.68 f
+  ALU_BLOCK/EN (ALU)                                      0.00       0.68 f
+  ALU_BLOCK/U61/Y (NAND2X2M)                              0.15       0.84 r
+  ALU_BLOCK/U37/Y (OAI2BB1X2M)                            0.07       0.91 f
+  ALU_BLOCK/ALU_OUT_reg[11]/D (DFFRQX2M)                  0.00       0.91 f
+  data arrival time                                                  0.91
+
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_BLOCK/ALU_OUT_reg[11]/CK (DFFRQX2M)                 0.00       0.00 r
+  library hold time                                      -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.93
+
+
+  Startpoint: SYS_CTRL_BLOCK/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU_BLOCK/ALU_OUT_reg[10]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SYS_CTRL_BLOCK/current_state_reg[2]/CK (DFFRQX2M)       0.00       0.00 r
+  SYS_CTRL_BLOCK/current_state_reg[2]/Q (DFFRQX2M)        0.40       0.40 r
+  SYS_CTRL_BLOCK/U35/Y (NOR2X2M)                          0.08       0.48 f
+  SYS_CTRL_BLOCK/U12/Y (NAND3X2M)                         0.12       0.59 r
+  SYS_CTRL_BLOCK/U10/Y (NOR2X2M)                          0.09       0.68 f
+  SYS_CTRL_BLOCK/EN (SYS_CTRL)                            0.00       0.68 f
+  ALU_BLOCK/EN (ALU)                                      0.00       0.68 f
+  ALU_BLOCK/U61/Y (NAND2X2M)                              0.15       0.84 r
+  ALU_BLOCK/U36/Y (OAI2BB1X2M)                            0.07       0.91 f
+  ALU_BLOCK/ALU_OUT_reg[10]/D (DFFRQX2M)                  0.00       0.91 f
+  data arrival time                                                  0.91
+
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_BLOCK/ALU_OUT_reg[10]/CK (DFFRQX2M)                 0.00       0.00 r
+  library hold time                                      -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.93
+
+
+  Startpoint: SYS_CTRL_BLOCK/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU_BLOCK/ALU_OUT_reg[9]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SYS_CTRL_BLOCK/current_state_reg[2]/CK (DFFRQX2M)       0.00       0.00 r
+  SYS_CTRL_BLOCK/current_state_reg[2]/Q (DFFRQX2M)        0.40       0.40 r
+  SYS_CTRL_BLOCK/U35/Y (NOR2X2M)                          0.08       0.48 f
+  SYS_CTRL_BLOCK/U12/Y (NAND3X2M)                         0.12       0.59 r
+  SYS_CTRL_BLOCK/U10/Y (NOR2X2M)                          0.09       0.68 f
+  SYS_CTRL_BLOCK/EN (SYS_CTRL)                            0.00       0.68 f
+  ALU_BLOCK/EN (ALU)                                      0.00       0.68 f
+  ALU_BLOCK/U61/Y (NAND2X2M)                              0.15       0.84 r
+  ALU_BLOCK/U35/Y (OAI2BB1X2M)                            0.07       0.91 f
+  ALU_BLOCK/ALU_OUT_reg[9]/D (DFFRQX2M)                   0.00       0.91 f
+  data arrival time                                                  0.91
+
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_BLOCK/ALU_OUT_reg[9]/CK (DFFRQX2M)                  0.00       0.00 r
+  library hold time                                      -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.93
+
+
+  Startpoint: register_BLOCK/Reg_File_reg[0][4]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU_BLOCK/ALU_OUT_reg[3]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  register_BLOCK/Reg_File_reg[0][4]/CK (DFFRQX2M)         0.00       0.00 r
+  register_BLOCK/Reg_File_reg[0][4]/Q (DFFRQX2M)          0.47       0.47 f
+  register_BLOCK/REG0[4] (register)                       0.00       0.47 f
+  ALU_BLOCK/A[4] (ALU)                                    0.00       0.47 f
+  ALU_BLOCK/U120/Y (BUFX2M)                               0.21       0.68 f
+  ALU_BLOCK/U150/Y (AOI22XLM)                             0.16       0.85 r
+  ALU_BLOCK/U83/Y (AOI31X2M)                              0.10       0.95 f
+  ALU_BLOCK/ALU_OUT_reg[3]/D (DFFRQX2M)                   0.00       0.95 f
+  data arrival time                                                  0.95
+
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_BLOCK/ALU_OUT_reg[3]/CK (DFFRQX2M)                  0.00       0.00 r
+  library hold time                                      -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.95
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.98
+
+
+  Startpoint: register_BLOCK/Reg_File_reg[1][4]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU_BLOCK/ALU_OUT_reg[4]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  register_BLOCK/Reg_File_reg[1][4]/CK (DFFRHQX1M)        0.00       0.00 r
+  register_BLOCK/Reg_File_reg[1][4]/Q (DFFRHQX1M)         0.38       0.38 f
+  register_BLOCK/REG1[4] (register)                       0.00       0.38 f
+  ALU_BLOCK/B[4] (ALU)                                    0.00       0.38 f
+  ALU_BLOCK/U139/Y (INVXLM)                               0.11       0.49 r
+  ALU_BLOCK/U138/Y (OAI222XLM)                            0.18       0.67 f
+  ALU_BLOCK/U86/Y (AOI211X2M)                             0.18       0.85 r
+  ALU_BLOCK/U151/Y (AOI31X2M)                             0.11       0.96 f
+  ALU_BLOCK/ALU_OUT_reg[4]/D (DFFRQX2M)                   0.00       0.96 f
+  data arrival time                                                  0.96
+
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_BLOCK/ALU_OUT_reg[4]/CK (DFFRQX2M)                  0.00       0.00 r
+  library hold time                                      -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.99
+
+
+  Startpoint: SYS_CTRL_BLOCK/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: ALU_BLOCK/ALU_OUT_reg[5]
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SYS_CTRL_BLOCK/current_state_reg[2]/CK (DFFRQX2M)       0.00       0.00 r
+  SYS_CTRL_BLOCK/current_state_reg[2]/Q (DFFRQX2M)        0.40       0.40 r
+  SYS_CTRL_BLOCK/U35/Y (NOR2X2M)                          0.08       0.48 f
+  SYS_CTRL_BLOCK/U12/Y (NAND3X2M)                         0.12       0.59 r
+  SYS_CTRL_BLOCK/U10/Y (NOR2X2M)                          0.09       0.68 f
+  SYS_CTRL_BLOCK/EN (SYS_CTRL)                            0.00       0.68 f
+  ALU_BLOCK/EN (ALU)                                      0.00       0.68 f
+  ALU_BLOCK/U74/Y (INVX2M)                                0.22       0.90 r
+  ALU_BLOCK/U103/Y (AOI31X2M)                             0.06       0.96 f
+  ALU_BLOCK/ALU_OUT_reg[5]/D (DFFRQX2M)                   0.00       0.96 f
+  data arrival time                                                  0.96
+
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALU_BLOCK/ALU_OUT_reg[5]/CK (DFFRQX2M)                  0.00       0.00 r
+  library hold time                                      -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.99
+
+
+  Startpoint: FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[3]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[3]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[3]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[3]/Q (DFFRQX2M)
+                                                          0.39       0.39 r
+  FIFO_BLOCK/FIFO_WR_BLOCK/U7/Y (XNOR2X2M)                0.05       0.45 f
+  FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[3]/D (DFFRQX2M)
+                                                          0.00       0.45 f
+  data arrival time                                                  0.45
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[3]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.37
+
+
+  Startpoint: RST_SYNC_BLOCK_U1/ff_reg[0]/CK
+              (internal path startpoint clocked by REF_CLK)
+  Endpoint: RST_SYNC_BLOCK_U1/ff_reg[1]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  RST_SYNC_BLOCK_U1/ff_reg[0]/CK (DFFRQX2M)               0.00       0.00 r
+  RST_SYNC_BLOCK_U1/ff_reg[0]/Q (DFFRQX2M)                0.45       0.45 f
+  RST_SYNC_BLOCK_U1/ff_reg[1]/D (DFFRQX2M)                0.00       0.45 f
+  data arrival time                                                  0.45
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  RST_SYNC_BLOCK_U1/ff_reg[1]/CK (DFFRQX2M)               0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.37
+
+
+  Startpoint: FIFO_BLOCK/DF_SYNC_U0/ff_reg[3]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: FIFO_BLOCK/DF_SYNC_U0/data_out_reg[3]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/DF_SYNC_U0/ff_reg[3]/CK (DFFRQX2M)           0.00       0.00 r
+  FIFO_BLOCK/DF_SYNC_U0/ff_reg[3]/Q (DFFRQX2M)            0.45       0.45 f
+  FIFO_BLOCK/DF_SYNC_U0/data_out_reg[3]/D (DFFRQX2M)      0.00       0.45 f
+  data arrival time                                                  0.45
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/DF_SYNC_U0/data_out_reg[3]/CK (DFFRQX2M)     0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.37
+
+
+  Startpoint: FIFO_BLOCK/DF_SYNC_U0/ff_reg[2]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: FIFO_BLOCK/DF_SYNC_U0/data_out_reg[2]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/DF_SYNC_U0/ff_reg[2]/CK (DFFRQX2M)           0.00       0.00 r
+  FIFO_BLOCK/DF_SYNC_U0/ff_reg[2]/Q (DFFRQX2M)            0.45       0.45 f
+  FIFO_BLOCK/DF_SYNC_U0/data_out_reg[2]/D (DFFRQX2M)      0.00       0.45 f
+  data arrival time                                                  0.45
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/DF_SYNC_U0/data_out_reg[2]/CK (DFFRQX2M)     0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.37
+
+
+  Startpoint: FIFO_BLOCK/DF_SYNC_U0/ff_reg[1]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: FIFO_BLOCK/DF_SYNC_U0/data_out_reg[1]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/DF_SYNC_U0/ff_reg[1]/CK (DFFRQX2M)           0.00       0.00 r
+  FIFO_BLOCK/DF_SYNC_U0/ff_reg[1]/Q (DFFRQX2M)            0.45       0.45 f
+  FIFO_BLOCK/DF_SYNC_U0/data_out_reg[1]/D (DFFRQX2M)      0.00       0.45 f
+  data arrival time                                                  0.45
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/DF_SYNC_U0/data_out_reg[1]/CK (DFFRQX2M)     0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.37
+
+
+  Startpoint: FIFO_BLOCK/DF_SYNC_U0/ff_reg[0]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: FIFO_BLOCK/DF_SYNC_U0/data_out_reg[0]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/DF_SYNC_U0/ff_reg[0]/CK (DFFRQX2M)           0.00       0.00 r
+  FIFO_BLOCK/DF_SYNC_U0/ff_reg[0]/Q (DFFRQX2M)            0.45       0.45 f
+  FIFO_BLOCK/DF_SYNC_U0/data_out_reg[0]/D (DFFRQX2M)      0.00       0.45 f
+  data arrival time                                                  0.45
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/DF_SYNC_U0/data_out_reg[0]/CK (DFFRQX2M)     0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.37
+
+
+  Startpoint: Data_Sync_BLOCK/Multi_Flip_Flop_reg[0]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: Data_Sync_BLOCK/Multi_Flip_Flop_reg[1]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Data_Sync_BLOCK/Multi_Flip_Flop_reg[0]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  Data_Sync_BLOCK/Multi_Flip_Flop_reg[0]/Q (DFFRQX2M)     0.45       0.45 f
+  Data_Sync_BLOCK/Multi_Flip_Flop_reg[1]/D (DFFRQX2M)     0.00       0.45 f
+  data arrival time                                                  0.45
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Data_Sync_BLOCK/Multi_Flip_Flop_reg[1]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.37
+
+
+  Startpoint: FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[1]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: FIFO_BLOCK/DF_SYNC_U0/ff_reg[1]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[1]/CK (DFFRQX2M)      0.00       0.00 r
+  FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[1]/Q (DFFRQX2M)       0.46       0.46 f
+  FIFO_BLOCK/FIFO_WR_BLOCK/wptr[1] (FIFO_WR)              0.00       0.46 f
+  FIFO_BLOCK/DF_SYNC_U0/data_in[1] (DF_SYNC_0)            0.00       0.46 f
+  FIFO_BLOCK/DF_SYNC_U0/ff_reg[1]/D (DFFRQX2M)            0.00       0.46 f
+  data arrival time                                                  0.46
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/DF_SYNC_U0/ff_reg[1]/CK (DFFRQX2M)           0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.46
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.39
+
+
+  Startpoint: FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[0]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: FIFO_BLOCK/DF_SYNC_U0/ff_reg[0]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[0]/CK (DFFRQX2M)      0.00       0.00 r
+  FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[0]/Q (DFFRQX2M)       0.46       0.46 f
+  FIFO_BLOCK/FIFO_WR_BLOCK/wptr[0] (FIFO_WR)              0.00       0.46 f
+  FIFO_BLOCK/DF_SYNC_U0/data_in[0] (DF_SYNC_0)            0.00       0.46 f
+  FIFO_BLOCK/DF_SYNC_U0/ff_reg[0]/D (DFFRQX2M)            0.00       0.46 f
+  data arrival time                                                  0.46
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/DF_SYNC_U0/ff_reg[0]/CK (DFFRQX2M)           0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.46
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.39
+
+
+  Startpoint: Data_Sync_BLOCK/Multi_Flip_Flop_reg[1]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: Data_Sync_BLOCK/Pulse_Gen_ff_reg
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Data_Sync_BLOCK/Multi_Flip_Flop_reg[1]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  Data_Sync_BLOCK/Multi_Flip_Flop_reg[1]/Q (DFFRQX2M)     0.46       0.46 f
+  Data_Sync_BLOCK/Pulse_Gen_ff_reg/D (DFFRQX2M)           0.00       0.46 f
+  data arrival time                                                  0.46
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Data_Sync_BLOCK/Pulse_Gen_ff_reg/CK (DFFRQX2M)          0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.46
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.39
+
+
+  Startpoint: FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[3]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: FIFO_BLOCK/DF_SYNC_U0/ff_reg[3]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[3]/CK (DFFRQX2M)      0.00       0.00 r
+  FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[3]/Q (DFFRQX2M)       0.47       0.47 f
+  FIFO_BLOCK/FIFO_WR_BLOCK/wptr[3] (FIFO_WR)              0.00       0.47 f
+  FIFO_BLOCK/DF_SYNC_U0/data_in[3] (DF_SYNC_0)            0.00       0.47 f
+  FIFO_BLOCK/DF_SYNC_U0/ff_reg[3]/D (DFFRQX2M)            0.00       0.47 f
+  data arrival time                                                  0.47
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/DF_SYNC_U0/ff_reg[3]/CK (DFFRQX2M)           0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.40
+
+
+  Startpoint: FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[2]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: FIFO_BLOCK/DF_SYNC_U0/ff_reg[2]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[2]/CK (DFFRQX2M)      0.00       0.00 r
+  FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[2]/Q (DFFRQX2M)       0.47       0.47 f
+  FIFO_BLOCK/FIFO_WR_BLOCK/wptr[2] (FIFO_WR)              0.00       0.47 f
+  FIFO_BLOCK/DF_SYNC_U0/data_in[2] (DF_SYNC_0)            0.00       0.47 f
+  FIFO_BLOCK/DF_SYNC_U0/ff_reg[2]/D (DFFRQX2M)            0.00       0.47 f
+  data arrival time                                                  0.47
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/DF_SYNC_U0/ff_reg[2]/CK (DFFRQX2M)           0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.40
+
+
+  Startpoint: FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[3]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[3]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[3]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[3]/Q (DFFRQX2M)
+                                                          0.48       0.48 f
+  FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[3]/D (DFFRQX2M)       0.00       0.48 f
+  data arrival time                                                  0.48
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[3]/CK (DFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.42
+
+
+  Startpoint: register_BLOCK/Reg_File_reg[1][6]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: register_BLOCK/Reg_File_reg[1][6]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  register_BLOCK/Reg_File_reg[1][6]/CK (DFFRHQX4M)        0.00       0.00 r
+  register_BLOCK/Reg_File_reg[1][6]/Q (DFFRHQX4M)         0.27       0.27 r
+  register_BLOCK/U240/Y (MX2XLM)                          0.21       0.49 r
+  register_BLOCK/Reg_File_reg[1][6]/D (DFFRHQX4M)         0.00       0.49 r
+  data arrival time                                                  0.49
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  register_BLOCK/Reg_File_reg[1][6]/CK (DFFRHQX4M)        0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.49
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.43
+
+
+  Startpoint: FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[2]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[2]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[2]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[2]/Q (DFFRQX2M)
+                                                          0.45       0.45 r
+  FIFO_BLOCK/FIFO_WR_BLOCK/U6/Y (XNOR2X2M)                0.06       0.51 f
+  FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[2]/D (DFFRQX2M)
+                                                          0.00       0.51 f
+  data arrival time                                                  0.51
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[2]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.44
+
+
+  Startpoint: FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[0]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[0]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[0]/Q (DFFRQX2M)
+                                                          0.47       0.47 r
+  FIFO_BLOCK/FIFO_WR_BLOCK/U17/Y (XNOR2X2M)               0.07       0.54 f
+  FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[0]/D (DFFRQX2M)
+                                                          0.00       0.54 f
+  data arrival time                                                  0.54
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[0]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.47
+
+
+  Startpoint: FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[1]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[0]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[1]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[1]/Q (DFFRQX2M)
+                                                          0.51       0.51 r
+  FIFO_BLOCK/FIFO_WR_BLOCK/U16/Y (XNOR2X2M)               0.07       0.58 f
+  FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[0]/D (DFFRQX2M)       0.00       0.58 f
+  data arrival time                                                  0.58
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[0]/CK (DFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.58
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: register_BLOCK/Reg_File_reg[1][2]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: register_BLOCK/Reg_File_reg[1][2]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  register_BLOCK/Reg_File_reg[1][2]/CK (DFFRHQX2M)        0.00       0.00 r
+  register_BLOCK/Reg_File_reg[1][2]/Q (DFFRHQX2M)         0.34       0.34 r
+  register_BLOCK/U12/Y (MX2XLM)                           0.22       0.56 r
+  register_BLOCK/Reg_File_reg[1][2]/D (DFFRHQX2M)         0.00       0.56 r
+  data arrival time                                                  0.56
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  register_BLOCK/Reg_File_reg[1][2]/CK (DFFRHQX2M)        0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: register_BLOCK/RdData_Valid_reg
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: SYS_CTRL_BLOCK/current_state_reg[0]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  register_BLOCK/RdData_Valid_reg/CK (DFFRQX2M)           0.00       0.00 r
+  register_BLOCK/RdData_Valid_reg/Q (DFFRQX2M)            0.39       0.39 r
+  register_BLOCK/RdData_Valid (register)                  0.00       0.39 r
+  SYS_CTRL_BLOCK/RdData_Valid (SYS_CTRL)                  0.00       0.39 r
+  SYS_CTRL_BLOCK/U91/Y (OA22X2M)                          0.14       0.53 r
+  SYS_CTRL_BLOCK/U90/Y (NAND3X2M)                         0.06       0.59 f
+  SYS_CTRL_BLOCK/current_state_reg[0]/D (DFFRQX2M)        0.00       0.59 f
+  data arrival time                                                  0.59
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  SYS_CTRL_BLOCK/current_state_reg[0]/CK (DFFRQX2M)       0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[3]
+              (rising edge-triggered flip-flop clocked by REF_CLK)
+  Endpoint: FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[2]
+            (rising edge-triggered flip-flop clocked by REF_CLK)
+  Path Group: REF_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[3]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  FIFO_BLOCK/FIFO_WR_BLOCK/waddr_ptr_reg[3]/Q (DFFRQX2M)
+                                                          0.39       0.39 r
+  FIFO_BLOCK/FIFO_WR_BLOCK/U20/Y (CLKXOR2X2M)             0.20       0.60 f
+  FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[2]/D (DFFRQX2M)       0.00       0.60 f
+  data arrival time                                                  0.60
+
+  clock REF_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/FIFO_WR_BLOCK/wptr_reg[2]/CK (DFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/bit_cnt_reg[1]
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/bit_cnt_reg[1]
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/bit_cnt_reg[1]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/bit_cnt_reg[1]/Q (DFFRQX2M)
+                                                          0.45       0.45 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/U19/Y (XNOR2X2M)
+                                                          0.06       0.51 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/bit_cnt_reg[1]/D (DFFRQX2M)
+                                                          0.00       0.51 f
+  data arrival time                                                  0.51
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/bit_cnt_reg[1]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.44
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/bit_cnt_reg[0]
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/bit_cnt_reg[0]
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/bit_cnt_reg[0]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/bit_cnt_reg[0]/Q (DFFRQX2M)
+                                                          0.46       0.46 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/U18/Y (XNOR2X2M)
+                                                          0.07       0.52 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/bit_cnt_reg[0]/D (DFFRQX2M)
+                                                          0.00       0.52 f
+  data arrival time                                                  0.52
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/bit_cnt_reg[0]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.52
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.45
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/edge_cnt_reg[0]
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/edge_cnt_reg[0]
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/edge_cnt_reg[0]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/edge_cnt_reg[0]/Q (DFFRQX2M)
+                                                          0.50       0.50 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/U17/Y (NOR2X2M)
+                                                          0.06       0.56 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/edge_cnt_reg[0]/D (DFFRQX2M)
+                                                          0.00       0.56 f
+  data arrival time                                                  0.56
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/edge_cnt_reg[0]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.49
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[5]
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[5]
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[5]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[5]/Q (DFFRQX2M)
+                                                          0.48       0.48 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/U16/Y (OAI21X2M)
+                                                          0.07       0.55 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/U15/Y (OAI21X2M)
+                                                          0.04       0.59 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[5]/D (DFFRQX2M)
+                                                          0.00       0.59 f
+  data arrival time                                                  0.59
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[5]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[1]
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[1]
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[1]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[1]/Q (DFFRQX2M)
+                                                          0.48       0.48 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/U8/Y (OAI21X2M)
+                                                          0.07       0.55 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/U7/Y (OAI21X2M)
+                                                          0.04       0.59 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[1]/D (DFFRQX2M)
+                                                          0.00       0.59 f
+  data arrival time                                                  0.59
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[1]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[4]
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[4]
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[4]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[4]/Q (DFFRQX2M)
+                                                          0.48       0.48 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/U14/Y (OAI21X2M)
+                                                          0.07       0.55 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/U13/Y (OAI21X2M)
+                                                          0.04       0.59 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[4]/D (DFFRQX2M)
+                                                          0.00       0.59 f
+  data arrival time                                                  0.59
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[4]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[0]
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[0]
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[0]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[0]/Q (DFFRQX2M)
+                                                          0.48       0.48 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/U22/Y (OAI21X2M)
+                                                          0.07       0.55 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/U21/Y (OAI21X2M)
+                                                          0.04       0.59 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[0]/D (DFFRQX2M)
+                                                          0.00       0.59 f
+  data arrival time                                                  0.59
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[0]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/current_state_reg[1]
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/current_state_reg[0]
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/current_state_reg[1]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/current_state_reg[1]/Q (DFFRQX2M)
+                                                          0.38       0.38 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/U12/Y (NOR3X2M)
+                                                          0.06       0.45 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/U11/Y (AOI31X2M)
+                                                          0.07       0.52 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/U9/Y (OAI211X2M)
+                                                          0.07       0.59 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/current_state_reg[0]/D (DFFRQX2M)
+                                                          0.00       0.59 f
+  data arrival time                                                  0.59
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/current_state_reg[0]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[7]
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[7]
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[7]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[7]/Q (DFFRQX2M)
+                                                          0.48       0.48 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/U20/Y (OAI21X2M)
+                                                          0.07       0.55 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/U19/Y (OAI21X2M)
+                                                          0.04       0.59 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[7]/D (DFFRQX2M)
+                                                          0.00       0.59 f
+  data arrival time                                                  0.59
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[7]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[3]
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[3]
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[3]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[3]/Q (DFFRQX2M)
+                                                          0.48       0.48 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/U12/Y (OAI21X2M)
+                                                          0.07       0.55 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/U11/Y (OAI21X2M)
+                                                          0.04       0.59 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[3]/D (DFFRQX2M)
+                                                          0.00       0.59 f
+  data arrival time                                                  0.59
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[3]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[6]
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[6]
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[6]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[6]/Q (DFFRQX2M)
+                                                          0.48       0.48 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/U18/Y (OAI21X2M)
+                                                          0.07       0.55 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/U17/Y (OAI21X2M)
+                                                          0.04       0.60 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[6]/D (DFFRQX2M)
+                                                          0.00       0.60 f
+  data arrival time                                                  0.60
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[6]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[2]
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[2]
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[2]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[2]/Q (DFFRQX2M)
+                                                          0.48       0.48 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/U10/Y (OAI21X2M)
+                                                          0.07       0.55 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/U9/Y (OAI21X2M)
+                                                          0.04       0.60 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[2]/D (DFFRQX2M)
+                                                          0.00       0.60 f
+  data arrival time                                                  0.60
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK/P_DATA_reg[2]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/strt_check_BLOCK/strt_glitch_reg
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/current_state_reg[1]
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/strt_check_BLOCK/strt_glitch_reg/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/strt_check_BLOCK/strt_glitch_reg/Q (DFFRQX2M)
+                                                          0.36       0.36 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/strt_check_BLOCK/strt_glitch (strt_check)
+                                                          0.00       0.36 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/strt_glitch (FSM)
+                                                          0.00       0.36 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/U27/Y (NOR3X2M)
+                                                          0.06       0.42 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/U16/Y (NAND3XLM)
+                                                          0.09       0.50 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/U15/Y (OAI211XLM)
+                                                          0.10       0.61 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/current_state_reg[1]/D (DFFRQX2M)
+                                                          0.00       0.61 f
+  data arrival time                                                  0.61
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/current_state_reg[1]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.55
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/samples_reg[0]
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/samples_reg[0]
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/samples_reg[0]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/samples_reg[0]/Q (DFFRQX2M)
+                                                          0.46       0.46 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/U51/Y (CLKINVX1M)
+                                                          0.08       0.55 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/U49/Y (MXI2X1M)
+                                                          0.08       0.63 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/samples_reg[0]/D (DFFRQX2M)
+                                                          0.00       0.63 f
+  data arrival time                                                  0.63
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/samples_reg[0]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/bit_cnt_reg[2]
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/bit_cnt_reg[2]
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/bit_cnt_reg[2]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/bit_cnt_reg[2]/Q (DFFRQX2M)
+                                                          0.42       0.42 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/U12/Y (CLKXOR2X2M)
+                                                          0.21       0.63 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/bit_cnt_reg[2]/D (DFFRQX2M)
+                                                          0.00       0.63 f
+  data arrival time                                                  0.63
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/bit_cnt_reg[2]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/samples_reg[1]
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/samples_reg[1]
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/samples_reg[1]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/samples_reg[1]/Q (DFFRQX2M)
+                                                          0.46       0.46 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/U48/Y (CLKINVX1M)
+                                                          0.08       0.54 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/U39/Y (MXI2X1M)
+                                                          0.09       0.63 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/samples_reg[1]/D (DFFRQX2M)
+                                                          0.00       0.63 f
+  data arrival time                                                  0.63
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/samples_reg[1]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/valid_reg
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/parity_check_BLOCK/par_err_reg
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/valid_reg/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/valid_reg/Q (DFFRQX2M)
+                                                          0.41       0.41 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/valid (data_sampling)
+                                                          0.00       0.41 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/parity_check_BLOCK/valid (parity_check)
+                                                          0.00       0.41 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/parity_check_BLOCK/U5/Y (NAND2X2M)
+                                                          0.08       0.49 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/parity_check_BLOCK/U4/Y (OAI2BB2X1M)
+                                                          0.16       0.65 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/parity_check_BLOCK/par_err_reg/D (DFFRHQX8M)
+                                                          0.00       0.65 r
+  data arrival time                                                  0.65
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/parity_check_BLOCK/par_err_reg/CK (DFFRHQX8M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.58
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/samples_reg[2]
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/samples_reg[2]
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/samples_reg[2]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/samples_reg[2]/Q (DFFRQX2M)
+                                                          0.46       0.46 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/U28/Y (CLKMX2X2M)
+                                                          0.19       0.65 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/samples_reg[2]/D (DFFRQX2M)
+                                                          0.00       0.65 f
+  data arrival time                                                  0.65
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK/samples_reg[2]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.58
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/current_state_reg[0]
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/current_state_reg[2]
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/current_state_reg[0]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/current_state_reg[0]/Q (DFFRQX2M)
+                                                          0.44       0.44 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/U28/Y (NOR2X2M)
+                                                          0.09       0.53 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/U8/Y (INVX2M)
+                                                          0.07       0.60 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/U22/Y (OAI211X2M)
+                                                          0.07       0.67 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/current_state_reg[2]/D (DFFRQX2M)
+                                                          0.00       0.67 f
+  data arrival time                                                  0.67
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK/current_state_reg[2]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/edge_cnt_reg[5]
+              (rising edge-triggered flip-flop clocked by RX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/edge_cnt_reg[5]
+            (rising edge-triggered flip-flop clocked by RX_CLK)
+  Path Group: RX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/edge_cnt_reg[5]/CK (DFFRQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/edge_cnt_reg[5]/Q (DFFRQX2M)
+                                                          0.44       0.44 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/U16/Y (XNOR2X2M)
+                                                          0.20       0.64 r
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/U15/Y (NOR2X2M)
+                                                          0.05       0.68 f
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/edge_cnt_reg[5]/D (DFFRQX2M)
+                                                          0.00       0.68 f
+  data arrival time                                                  0.68
+
+  clock RX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK/edge_cnt_reg[5]/CK (DFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.61
+
+
+  Startpoint: FIFO_BLOCK/DF_SYNC_U1/ff_reg[1]
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: FIFO_BLOCK/DF_SYNC_U1/data_out_reg[1]
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/DF_SYNC_U1/ff_reg[1]/CK (DFFRQX2M)           0.00       0.00 r
+  FIFO_BLOCK/DF_SYNC_U1/ff_reg[1]/Q (DFFRQX2M)            0.45       0.45 f
+  FIFO_BLOCK/DF_SYNC_U1/data_out_reg[1]/D (DFFRQX2M)      0.00       0.45 f
+  data arrival time                                                  0.45
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/DF_SYNC_U1/data_out_reg[1]/CK (DFFRQX2M)     0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.37
+
+
+  Startpoint: FIFO_BLOCK/DF_SYNC_U1/ff_reg[0]
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: FIFO_BLOCK/DF_SYNC_U1/data_out_reg[0]
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/DF_SYNC_U1/ff_reg[0]/CK (DFFRQX2M)           0.00       0.00 r
+  FIFO_BLOCK/DF_SYNC_U1/ff_reg[0]/Q (DFFRQX2M)            0.45       0.45 f
+  FIFO_BLOCK/DF_SYNC_U1/data_out_reg[0]/D (DFFRQX2M)      0.00       0.45 f
+  data arrival time                                                  0.45
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/DF_SYNC_U1/data_out_reg[0]/CK (DFFRQX2M)     0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.37
+
+
+  Startpoint: FIFO_BLOCK/DF_SYNC_U1/ff_reg[3]
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: FIFO_BLOCK/DF_SYNC_U1/data_out_reg[3]
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/DF_SYNC_U1/ff_reg[3]/CK (DFFRQX2M)           0.00       0.00 r
+  FIFO_BLOCK/DF_SYNC_U1/ff_reg[3]/Q (DFFRQX2M)            0.45       0.45 f
+  FIFO_BLOCK/DF_SYNC_U1/data_out_reg[3]/D (DFFRQX2M)      0.00       0.45 f
+  data arrival time                                                  0.45
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/DF_SYNC_U1/data_out_reg[3]/CK (DFFRQX2M)     0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.37
+
+
+  Startpoint: FIFO_BLOCK/DF_SYNC_U1/ff_reg[2]
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: FIFO_BLOCK/DF_SYNC_U1/data_out_reg[2]
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/DF_SYNC_U1/ff_reg[2]/CK (DFFRQX2M)           0.00       0.00 r
+  FIFO_BLOCK/DF_SYNC_U1/ff_reg[2]/Q (DFFRQX2M)            0.45       0.45 f
+  FIFO_BLOCK/DF_SYNC_U1/data_out_reg[2]/D (DFFRQX2M)      0.00       0.45 f
+  data arrival time                                                  0.45
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/DF_SYNC_U1/data_out_reg[2]/CK (DFFRQX2M)     0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.37
+
+
+  Startpoint: PULSE_GEN_BLOCK/rcv_flop_reg
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: PULSE_GEN_BLOCK/pls_flop_reg
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  PULSE_GEN_BLOCK/rcv_flop_reg/CK (DFFRQX1M)              0.00       0.00 r
+  PULSE_GEN_BLOCK/rcv_flop_reg/Q (DFFRQX1M)               0.49       0.49 f
+  PULSE_GEN_BLOCK/pls_flop_reg/D (DFFRQX1M)               0.00       0.49 f
+  data arrival time                                                  0.49
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  PULSE_GEN_BLOCK/pls_flop_reg/CK (DFFRQX1M)              0.00       0.10 r
+  library hold time                                      -0.01       0.09
+  data required time                                                 0.09
+  --------------------------------------------------------------------------
+  data required time                                                 0.09
+  data arrival time                                                 -0.49
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.40
+
+
+  Startpoint: FIFO_BLOCK/FIFO_RD_BLOCK/rptr_reg[3]
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: FIFO_BLOCK/DF_SYNC_U1/ff_reg[3]
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/FIFO_RD_BLOCK/rptr_reg[3]/CK (DFFRQX1M)      0.00       0.00 r
+  FIFO_BLOCK/FIFO_RD_BLOCK/rptr_reg[3]/Q (DFFRQX1M)       0.50       0.50 f
+  FIFO_BLOCK/FIFO_RD_BLOCK/rptr[3] (FIFO_RD)              0.00       0.50 f
+  FIFO_BLOCK/DF_SYNC_U1/data_in[3] (DF_SYNC_1)            0.00       0.50 f
+  FIFO_BLOCK/DF_SYNC_U1/ff_reg[3]/D (DFFRQX2M)            0.00       0.50 f
+  data arrival time                                                  0.50
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/DF_SYNC_U1/ff_reg[3]/CK (DFFRQX2M)           0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.43
+
+
+  Startpoint: FIFO_BLOCK/FIFO_RD_BLOCK/rptr_reg[2]
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: FIFO_BLOCK/DF_SYNC_U1/ff_reg[2]
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/FIFO_RD_BLOCK/rptr_reg[2]/CK (DFFRQX1M)      0.00       0.00 r
+  FIFO_BLOCK/FIFO_RD_BLOCK/rptr_reg[2]/Q (DFFRQX1M)       0.50       0.50 f
+  FIFO_BLOCK/FIFO_RD_BLOCK/rptr[2] (FIFO_RD)              0.00       0.50 f
+  FIFO_BLOCK/DF_SYNC_U1/data_in[2] (DF_SYNC_1)            0.00       0.50 f
+  FIFO_BLOCK/DF_SYNC_U1/ff_reg[2]/D (DFFRQX2M)            0.00       0.50 f
+  data arrival time                                                  0.50
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/DF_SYNC_U1/ff_reg[2]/CK (DFFRQX2M)           0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.43
+
+
+  Startpoint: FIFO_BLOCK/FIFO_RD_BLOCK/rptr_reg[1]
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: FIFO_BLOCK/DF_SYNC_U1/ff_reg[1]
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/FIFO_RD_BLOCK/rptr_reg[1]/CK (DFFRQX1M)      0.00       0.00 r
+  FIFO_BLOCK/FIFO_RD_BLOCK/rptr_reg[1]/Q (DFFRQX1M)       0.50       0.50 f
+  FIFO_BLOCK/FIFO_RD_BLOCK/rptr[1] (FIFO_RD)              0.00       0.50 f
+  FIFO_BLOCK/DF_SYNC_U1/data_in[1] (DF_SYNC_1)            0.00       0.50 f
+  FIFO_BLOCK/DF_SYNC_U1/ff_reg[1]/D (DFFRQX2M)            0.00       0.50 f
+  data arrival time                                                  0.50
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/DF_SYNC_U1/ff_reg[1]/CK (DFFRQX2M)           0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.43
+
+
+  Startpoint: FIFO_BLOCK/FIFO_RD_BLOCK/rptr_reg[0]
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: FIFO_BLOCK/DF_SYNC_U1/ff_reg[0]
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/FIFO_RD_BLOCK/rptr_reg[0]/CK (DFFRQX1M)      0.00       0.00 r
+  FIFO_BLOCK/FIFO_RD_BLOCK/rptr_reg[0]/Q (DFFRQX1M)       0.50       0.50 f
+  FIFO_BLOCK/FIFO_RD_BLOCK/rptr[0] (FIFO_RD)              0.00       0.50 f
+  FIFO_BLOCK/DF_SYNC_U1/data_in[0] (DF_SYNC_1)            0.00       0.50 f
+  FIFO_BLOCK/DF_SYNC_U1/ff_reg[0]/D (DFFRQX2M)            0.00       0.50 f
+  data arrival time                                                  0.50
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/DF_SYNC_U1/ff_reg[0]/CK (DFFRQX2M)           0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.43
+
+
+  Startpoint: FIFO_BLOCK/FIFO_RD_BLOCK/raddr_ptr_reg[3]
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: FIFO_BLOCK/FIFO_RD_BLOCK/raddr_ptr_reg[3]
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/FIFO_RD_BLOCK/raddr_ptr_reg[3]/CK (DFFRQX1M)
+                                                          0.00       0.00 r
+  FIFO_BLOCK/FIFO_RD_BLOCK/raddr_ptr_reg[3]/Q (DFFRQX1M)
+                                                          0.47       0.47 r
+  FIFO_BLOCK/FIFO_RD_BLOCK/U7/Y (XNOR2X2M)                0.06       0.52 f
+  FIFO_BLOCK/FIFO_RD_BLOCK/raddr_ptr_reg[3]/D (DFFRQX1M)
+                                                          0.00       0.52 f
+  data arrival time                                                  0.52
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/FIFO_RD_BLOCK/raddr_ptr_reg[3]/CK (DFFRQX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.01       0.09
+  data required time                                                 0.09
+  --------------------------------------------------------------------------
+  data required time                                                 0.09
+  data arrival time                                                 -0.52
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.43
+
+
+  Startpoint: FIFO_BLOCK/FIFO_RD_BLOCK/raddr_ptr_reg[3]
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: FIFO_BLOCK/FIFO_RD_BLOCK/rptr_reg[3]
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/FIFO_RD_BLOCK/raddr_ptr_reg[3]/CK (DFFRQX1M)
+                                                          0.00       0.00 r
+  FIFO_BLOCK/FIFO_RD_BLOCK/raddr_ptr_reg[3]/Q (DFFRQX1M)
+                                                          0.53       0.53 f
+  FIFO_BLOCK/FIFO_RD_BLOCK/rptr_reg[3]/D (DFFRQX1M)       0.00       0.53 f
+  data arrival time                                                  0.53
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/FIFO_RD_BLOCK/rptr_reg[3]/CK (DFFRQX1M)      0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.53
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.45
+
+
+  Startpoint: FIFO_BLOCK/FIFO_RD_BLOCK/raddr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: FIFO_BLOCK/FIFO_RD_BLOCK/raddr_ptr_reg[0]
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FIFO_BLOCK/FIFO_RD_BLOCK/raddr_ptr_reg[0]/CK (DFFRQX1M)
+                                                          0.00       0.00 r
+  FIFO_BLOCK/FIFO_RD_BLOCK/raddr_ptr_reg[0]/Q (DFFRQX1M)
+                                                          0.48       0.48 r
+  FIFO_BLOCK/FIFO_RD_BLOCK/U18/Y (XNOR2X2M)               0.06       0.54 f
+  FIFO_BLOCK/FIFO_RD_BLOCK/raddr_ptr_reg[0]/D (DFFRQX1M)
+                                                          0.00       0.54 f
+  data arrival time                                                  0.54
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  FIFO_BLOCK/FIFO_RD_BLOCK/raddr_ptr_reg[0]/CK (DFFRQX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.01       0.09
+  data required time                                                 0.09
+  --------------------------------------------------------------------------
+  data required time                                                 0.09
+  data arrival time                                                 -0.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.45
+
+
+  Startpoint: UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[6]
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[6]
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[6]/CK (DFFSQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[6]/Q (DFFSQX2M)
+                                                          0.41       0.41 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/U34/Y (AO22X1M)
+                                                          0.15       0.56 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[6]/D (DFFSQX2M)
+                                                          0.00       0.56 r
+  data arrival time                                                  0.56
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[6]/CK (DFFSQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.05       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[2]
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[2]
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[2]/CK (DFFSQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[2]/Q (DFFSQX2M)
+                                                          0.41       0.41 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/U30/Y (AO22X1M)
+                                                          0.15       0.56 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[2]/D (DFFSQX2M)
+                                                          0.00       0.56 r
+  data arrival time                                                  0.56
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[2]/CK (DFFSQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.05       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[5]
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[5]
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[5]/CK (DFFSQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[5]/Q (DFFSQX2M)
+                                                          0.41       0.41 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/U33/Y (AO22X1M)
+                                                          0.15       0.56 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[5]/D (DFFSQX2M)
+                                                          0.00       0.56 r
+  data arrival time                                                  0.56
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[5]/CK (DFFSQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.05       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[1]
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[1]
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[1]/CK (DFFSQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[1]/Q (DFFSQX2M)
+                                                          0.41       0.41 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/U29/Y (AO22X1M)
+                                                          0.15       0.56 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[1]/D (DFFSQX2M)
+                                                          0.00       0.56 r
+  data arrival time                                                  0.56
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[1]/CK (DFFSQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.05       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[7]
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[7]
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[7]/CK (DFFSQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[7]/Q (DFFSQX2M)
+                                                          0.41       0.41 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/U35/Y (AO22X1M)
+                                                          0.15       0.56 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[7]/D (DFFSQX2M)
+                                                          0.00       0.56 r
+  data arrival time                                                  0.56
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[7]/CK (DFFSQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.05       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[3]
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[3]
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[3]/CK (DFFSQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[3]/Q (DFFSQX2M)
+                                                          0.41       0.41 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/U31/Y (AO22X1M)
+                                                          0.15       0.56 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[3]/D (DFFSQX2M)
+                                                          0.00       0.56 r
+  data arrival time                                                  0.56
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[3]/CK (DFFSQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.05       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/ser_data_reg
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/ser_data_reg
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/ser_data_reg/CK (DFFSQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/ser_data_reg/Q (DFFSQX2M)
+                                                          0.42       0.42 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/U24/Y (AO2B2X2M)
+                                                          0.15       0.56 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/ser_data_reg/D (DFFSQX2M)
+                                                          0.00       0.56 r
+  data arrival time                                                  0.56
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/ser_data_reg/CK (DFFSQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.05       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[0]
+              (rising edge-triggered flip-flop clocked by TX_CLK)
+  Endpoint: UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[0]
+            (rising edge-triggered flip-flop clocked by TX_CLK)
+  Path Group: TX_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[0]/CK (DFFSQX2M)
+                                                          0.00       0.00 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[0]/Q (DFFSQX2M)
+                                                          0.41       0.41 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/U28/Y (AO22X1M)
+                                                          0.15       0.56 r
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[0]/D (DFFSQX2M)
+                                                          0.00       0.56 r
+  data arrival time                                                  0.56
+
+  clock TX_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block/REG_reg[0]/CK (DFFSQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.05       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: RST_SYNC_BLOCK_U2/ff_reg[0]/CK
+              (internal path startpoint clocked by UART_CLK)
+  Endpoint: RST_SYNC_BLOCK_U2/ff_reg[1]
+            (rising edge-triggered flip-flop clocked by UART_CLK)
+  Path Group: UART_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  RST_SYNC_BLOCK_U2/ff_reg[0]/CK (DFFRQX2M)               0.00       0.00 r
+  RST_SYNC_BLOCK_U2/ff_reg[0]/Q (DFFRQX2M)                0.45       0.45 f
+  RST_SYNC_BLOCK_U2/ff_reg[1]/D (DFFRQX2M)                0.00       0.45 f
+  data arrival time                                                  0.45
+
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  RST_SYNC_BLOCK_U2/ff_reg[1]/CK (DFFRQX2M)               0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.37
+
+
+  Startpoint: ClkDiv_TX_BLOCK/counter_reg[0]
+              (rising edge-triggered flip-flop clocked by UART_CLK)
+  Endpoint: ClkDiv_TX_BLOCK/counter_reg[0]
+            (rising edge-triggered flip-flop clocked by UART_CLK)
+  Path Group: UART_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ClkDiv_TX_BLOCK/counter_reg[0]/CK (DFFRQX2M)            0.00       0.00 r
+  ClkDiv_TX_BLOCK/counter_reg[0]/Q (DFFRQX2M)             0.43       0.43 r
+  ClkDiv_TX_BLOCK/U20/Y (NOR2X2M)                         0.05       0.48 f
+  ClkDiv_TX_BLOCK/counter_reg[0]/D (DFFRQX2M)             0.00       0.48 f
+  data arrival time                                                  0.48
+
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ClkDiv_TX_BLOCK/counter_reg[0]/CK (DFFRQX2M)            0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.40
+
+
+  Startpoint: ClkDiv_RX_BLOCK/counter_reg[0]
+              (rising edge-triggered flip-flop clocked by UART_CLK)
+  Endpoint: ClkDiv_RX_BLOCK/counter_reg[0]
+            (rising edge-triggered flip-flop clocked by UART_CLK)
+  Path Group: UART_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ClkDiv_RX_BLOCK/counter_reg[0]/CK (DFFRQX2M)            0.00       0.00 r
+  ClkDiv_RX_BLOCK/counter_reg[0]/Q (DFFRQX2M)             0.43       0.43 r
+  ClkDiv_RX_BLOCK/U21/Y (NOR2X2M)                         0.05       0.48 f
+  ClkDiv_RX_BLOCK/counter_reg[0]/D (DFFRQX2M)             0.00       0.48 f
+  data arrival time                                                  0.48
+
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ClkDiv_RX_BLOCK/counter_reg[0]/CK (DFFRQX2M)            0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.40
+
+
+  Startpoint: ClkDiv_TX_BLOCK/counter_reg[3]
+              (rising edge-triggered flip-flop clocked by UART_CLK)
+  Endpoint: ClkDiv_TX_BLOCK/counter_reg[3]
+            (rising edge-triggered flip-flop clocked by UART_CLK)
+  Path Group: UART_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ClkDiv_TX_BLOCK/counter_reg[3]/CK (DFFRQX2M)            0.00       0.00 r
+  ClkDiv_TX_BLOCK/counter_reg[3]/Q (DFFRQX2M)             0.39       0.39 r
+  ClkDiv_TX_BLOCK/U26/S (ADDHX1M)                         0.10       0.49 f
+  ClkDiv_TX_BLOCK/U10/Y (NOR2BX2M)                        0.12       0.61 f
+  ClkDiv_TX_BLOCK/counter_reg[3]/D (DFFRQX2M)             0.00       0.61 f
+  data arrival time                                                  0.61
+
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ClkDiv_TX_BLOCK/counter_reg[3]/CK (DFFRQX2M)            0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.54
+
+
+  Startpoint: ClkDiv_RX_BLOCK/counter_reg[3]
+              (rising edge-triggered flip-flop clocked by UART_CLK)
+  Endpoint: ClkDiv_RX_BLOCK/counter_reg[3]
+            (rising edge-triggered flip-flop clocked by UART_CLK)
+  Path Group: UART_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ClkDiv_RX_BLOCK/counter_reg[3]/CK (DFFRQX2M)            0.00       0.00 r
+  ClkDiv_RX_BLOCK/counter_reg[3]/Q (DFFRQX2M)             0.39       0.39 r
+  ClkDiv_RX_BLOCK/U27/S (ADDHX1M)                         0.10       0.49 f
+  ClkDiv_RX_BLOCK/U11/Y (NOR2BX2M)                        0.12       0.61 f
+  ClkDiv_RX_BLOCK/counter_reg[3]/D (DFFRQX2M)             0.00       0.61 f
+  data arrival time                                                  0.61
+
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ClkDiv_RX_BLOCK/counter_reg[3]/CK (DFFRQX2M)            0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.54
+
+
+  Startpoint: ClkDiv_TX_BLOCK/counter_reg[2]
+              (rising edge-triggered flip-flop clocked by UART_CLK)
+  Endpoint: ClkDiv_TX_BLOCK/counter_reg[2]
+            (rising edge-triggered flip-flop clocked by UART_CLK)
+  Path Group: UART_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ClkDiv_TX_BLOCK/counter_reg[2]/CK (DFFRQX2M)            0.00       0.00 r
+  ClkDiv_TX_BLOCK/counter_reg[2]/Q (DFFRQX2M)             0.39       0.39 r
+  ClkDiv_TX_BLOCK/U24/S (ADDHX1M)                         0.10       0.49 f
+  ClkDiv_TX_BLOCK/U9/Y (NOR2BX2M)                         0.12       0.61 f
+  ClkDiv_TX_BLOCK/counter_reg[2]/D (DFFRQX2M)             0.00       0.61 f
+  data arrival time                                                  0.61
+
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ClkDiv_TX_BLOCK/counter_reg[2]/CK (DFFRQX2M)            0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.54
+
+
+  Startpoint: ClkDiv_RX_BLOCK/counter_reg[2]
+              (rising edge-triggered flip-flop clocked by UART_CLK)
+  Endpoint: ClkDiv_RX_BLOCK/counter_reg[2]
+            (rising edge-triggered flip-flop clocked by UART_CLK)
+  Path Group: UART_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ClkDiv_RX_BLOCK/counter_reg[2]/CK (DFFRQX2M)            0.00       0.00 r
+  ClkDiv_RX_BLOCK/counter_reg[2]/Q (DFFRQX2M)             0.39       0.39 r
+  ClkDiv_RX_BLOCK/U25/S (ADDHX1M)                         0.10       0.49 f
+  ClkDiv_RX_BLOCK/U10/Y (NOR2BX2M)                        0.12       0.61 f
+  ClkDiv_RX_BLOCK/counter_reg[2]/D (DFFRQX2M)             0.00       0.61 f
+  data arrival time                                                  0.61
+
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ClkDiv_RX_BLOCK/counter_reg[2]/CK (DFFRQX2M)            0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.54
+
+
+  Startpoint: ClkDiv_TX_BLOCK/counter_reg[4]
+              (rising edge-triggered flip-flop clocked by UART_CLK)
+  Endpoint: ClkDiv_TX_BLOCK/counter_reg[4]
+            (rising edge-triggered flip-flop clocked by UART_CLK)
+  Path Group: UART_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ClkDiv_TX_BLOCK/counter_reg[4]/CK (DFFRQX2M)            0.00       0.00 r
+  ClkDiv_TX_BLOCK/counter_reg[4]/Q (DFFRQX2M)             0.39       0.39 r
+  ClkDiv_TX_BLOCK/U19/Y (XNOR2X2M)                        0.18       0.58 r
+  ClkDiv_TX_BLOCK/U18/Y (NOR2X2M)                         0.05       0.62 f
+  ClkDiv_TX_BLOCK/counter_reg[4]/D (DFFRQX2M)             0.00       0.62 f
+  data arrival time                                                  0.62
+
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ClkDiv_TX_BLOCK/counter_reg[4]/CK (DFFRQX2M)            0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.55
+
+
+  Startpoint: ClkDiv_RX_BLOCK/counter_reg[4]
+              (rising edge-triggered flip-flop clocked by UART_CLK)
+  Endpoint: ClkDiv_RX_BLOCK/counter_reg[4]
+            (rising edge-triggered flip-flop clocked by UART_CLK)
+  Path Group: UART_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ClkDiv_RX_BLOCK/counter_reg[4]/CK (DFFRQX2M)            0.00       0.00 r
+  ClkDiv_RX_BLOCK/counter_reg[4]/Q (DFFRQX2M)             0.39       0.39 r
+  ClkDiv_RX_BLOCK/U20/Y (XNOR2X2M)                        0.18       0.58 r
+  ClkDiv_RX_BLOCK/U19/Y (NOR2X2M)                         0.05       0.62 f
+  ClkDiv_RX_BLOCK/counter_reg[4]/D (DFFRQX2M)             0.00       0.62 f
+  data arrival time                                                  0.62
+
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ClkDiv_RX_BLOCK/counter_reg[4]/CK (DFFRQX2M)            0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.55
+
+
+  Startpoint: ClkDiv_TX_BLOCK/counter_reg[0]
+              (rising edge-triggered flip-flop clocked by UART_CLK)
+  Endpoint: ClkDiv_TX_BLOCK/counter_reg[1]
+            (rising edge-triggered flip-flop clocked by UART_CLK)
+  Path Group: UART_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ClkDiv_TX_BLOCK/counter_reg[0]/CK (DFFRQX2M)            0.00       0.00 r
+  ClkDiv_TX_BLOCK/counter_reg[0]/Q (DFFRQX2M)             0.43       0.43 r
+  ClkDiv_TX_BLOCK/U23/S (ADDHX1M)                         0.07       0.49 f
+  ClkDiv_TX_BLOCK/U8/Y (NOR2BX2M)                         0.13       0.62 f
+  ClkDiv_TX_BLOCK/counter_reg[1]/D (DFFRQX2M)             0.00       0.62 f
+  data arrival time                                                  0.62
+
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ClkDiv_TX_BLOCK/counter_reg[1]/CK (DFFRQX2M)            0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.55
+
+
+  Startpoint: ClkDiv_RX_BLOCK/counter_reg[0]
+              (rising edge-triggered flip-flop clocked by UART_CLK)
+  Endpoint: ClkDiv_RX_BLOCK/counter_reg[1]
+            (rising edge-triggered flip-flop clocked by UART_CLK)
+  Path Group: UART_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ClkDiv_RX_BLOCK/counter_reg[0]/CK (DFFRQX2M)            0.00       0.00 r
+  ClkDiv_RX_BLOCK/counter_reg[0]/Q (DFFRQX2M)             0.43       0.43 r
+  ClkDiv_RX_BLOCK/U24/S (ADDHX1M)                         0.07       0.49 f
+  ClkDiv_RX_BLOCK/U9/Y (NOR2BX2M)                         0.13       0.62 f
+  ClkDiv_RX_BLOCK/counter_reg[1]/D (DFFRQX2M)             0.00       0.62 f
+  data arrival time                                                  0.62
+
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ClkDiv_RX_BLOCK/counter_reg[1]/CK (DFFRQX2M)            0.00       0.10 r
+  library hold time                                      -0.02       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.55
+
+
+  Startpoint: ClkDiv_TX_BLOCK/flag_reg
+              (rising edge-triggered flip-flop clocked by UART_CLK)
+  Endpoint: ClkDiv_TX_BLOCK/flag_reg
+            (rising edge-triggered flip-flop clocked by UART_CLK)
+  Path Group: UART_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ClkDiv_TX_BLOCK/flag_reg/CK (DFFRQX2M)                  0.00       0.00 r
+  ClkDiv_TX_BLOCK/flag_reg/Q (DFFRQX2M)                   0.47       0.47 f
+  ClkDiv_TX_BLOCK/U25/Y (INVX2M)                          0.07       0.54 r
+  ClkDiv_TX_BLOCK/U17/Y (OAI2BB2X1M)                      0.09       0.63 f
+  ClkDiv_TX_BLOCK/flag_reg/D (DFFRQX2M)                   0.00       0.63 f
+  data arrival time                                                  0.63
+
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ClkDiv_TX_BLOCK/flag_reg/CK (DFFRQX2M)                  0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: ClkDiv_RX_BLOCK/flag_reg
+              (rising edge-triggered flip-flop clocked by UART_CLK)
+  Endpoint: ClkDiv_RX_BLOCK/flag_reg
+            (rising edge-triggered flip-flop clocked by UART_CLK)
+  Path Group: UART_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ClkDiv_RX_BLOCK/flag_reg/CK (DFFRQX2M)                  0.00       0.00 r
+  ClkDiv_RX_BLOCK/flag_reg/Q (DFFRQX2M)                   0.47       0.47 f
+  ClkDiv_RX_BLOCK/U26/Y (INVX2M)                          0.07       0.54 r
+  ClkDiv_RX_BLOCK/U18/Y (OAI2BB2X1M)                      0.09       0.63 f
+  ClkDiv_RX_BLOCK/flag_reg/D (DFFRQX2M)                   0.00       0.63 f
+  data arrival time                                                  0.63
+
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ClkDiv_RX_BLOCK/flag_reg/CK (DFFRQX2M)                  0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: ClkDiv_TX_BLOCK/o_clk_reg
+              (rising edge-triggered flip-flop clocked by UART_CLK)
+  Endpoint: ClkDiv_TX_BLOCK/o_clk_reg
+            (rising edge-triggered flip-flop clocked by UART_CLK)
+  Path Group: UART_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ClkDiv_TX_BLOCK/o_clk_reg/CK (DFFRQX2M)                 0.00       0.00 r
+  ClkDiv_TX_BLOCK/o_clk_reg/Q (DFFRQX2M)                  0.38       0.38 r
+  ClkDiv_TX_BLOCK/U21/Y (CLKXOR2X2M)                      0.29       0.67 f
+  ClkDiv_TX_BLOCK/o_clk_reg/D (DFFRQX2M)                  0.00       0.67 f
+  data arrival time                                                  0.67
+
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ClkDiv_TX_BLOCK/o_clk_reg/CK (DFFRQX2M)                 0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.59
+
+
+  Startpoint: ClkDiv_RX_BLOCK/o_clk_reg
+              (rising edge-triggered flip-flop clocked by UART_CLK)
+  Endpoint: ClkDiv_RX_BLOCK/o_clk_reg
+            (rising edge-triggered flip-flop clocked by UART_CLK)
+  Path Group: UART_CLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ClkDiv_RX_BLOCK/o_clk_reg/CK (DFFRQX2M)                 0.00       0.00 r
+  ClkDiv_RX_BLOCK/o_clk_reg/Q (DFFRQX2M)                  0.38       0.38 r
+  ClkDiv_RX_BLOCK/U22/Y (CLKXOR2X2M)                      0.29       0.67 f
+  ClkDiv_RX_BLOCK/o_clk_reg/D (DFFRQX2M)                  0.00       0.67 f
+  data arrival time                                                  0.67
+
+  clock UART_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ClkDiv_RX_BLOCK/o_clk_reg/CK (DFFRQX2M)                 0.00       0.10 r
+  library hold time                                      -0.03       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.59
+
+
+1

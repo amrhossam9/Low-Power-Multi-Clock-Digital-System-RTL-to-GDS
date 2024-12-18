@@ -1,0 +1,1 @@
+-1 12 54 11 3 75 5147 28 2 FMR_ELAB-147/home/IC/Projects/System/RTL/UART/UART_TX/serializer.v/serializerREGIndex may take values outside array bound, may cause simulation mismatch ..

@@ -1,0 +1,97 @@
+ 
+****************************************
+Report : area
+Design : SYS_TOP_DFT
+Version: K-2015.06
+Date   : Wed Oct 23 22:54:48 2024
+****************************************
+
+Library(s) Used:
+
+    scmetro_tsmc_cl013g_rvt_ss_1p08v_125c (File: /home/IC/tsmc_fb_cl013g_sc/aci/sc-m/synopsys/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db)
+
+Number of ports:                          858
+Number of nets:                          2751
+Number of cells:                         1868
+Number of combinational cells:           1460
+Number of sequential cells:               365
+Number of macros/black boxes:               0
+Number of buf/inv:                        285
+Number of references:                      25
+
+Combinational area:              14378.097538
+Buf/Inv area:                     1135.515522
+Noncombinational area:           11371.629223
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 25749.726760
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------
+SYS_TOP_DFT                       25749.7268    100.0     52.9515      0.0000  0.0000  SYS_TOP_DFT
+ALU_BLOCK                          6994.3049     27.2   1177.8767    563.6393  0.0000  ALU_test_1
+ALU_BLOCK/add_34                    244.7536      1.0    244.7536      0.0000  0.0000  ALU_DW01_add_0
+ALU_BLOCK/div_43                   2586.3866     10.0   2586.3866      0.0000  0.0000  ALU_DW_div_uns_1
+ALU_BLOCK/mult_40                  2155.7144      8.4   1914.4909      0.0000  0.0000  ALU_DW02_mult_0
+ALU_BLOCK/mult_40/FS_1              241.2235      0.9    241.2235      0.0000  0.0000  ALU_DW01_add_1
+ALU_BLOCK/sub_37                    265.9342      1.0    265.9342      0.0000  0.0000  ALU_DW01_sub_0
+CLKDIV_MUX_BLOCK                     88.2525      0.3     88.2525      0.0000  0.0000  CLKDIV_MUX
+CLK_GATE_BLOCK                       40.0078      0.2      0.0000     40.0078  0.0000  CLK_GATE
+ClkDiv_RX_BLOCK                     684.8394      2.7    453.0295    231.8099  0.0000  ClkDiv_test_0
+ClkDiv_TX_BLOCK                     684.8394      2.7    453.0295    231.8099  0.0000  ClkDiv_test_1
+Data_Sync_BLOCK                     480.0936      1.9     84.7224    395.3712  0.0000  Data_Sync_test_1
+FIFO_BLOCK                         4736.2177     18.4     12.9437      0.0000  0.0000  FIFO_TOP_test_1
+FIFO_BLOCK/DF_SYNC_U0               263.5808      1.0      0.0000    263.5808  0.0000  DF_SYNC_test_0
+FIFO_BLOCK/DF_SYNC_U1               263.5808      1.0      0.0000    263.5808  0.0000  DF_SYNC_test_1
+FIFO_BLOCK/FIFO_MEM_CNTRL_BLOCK    3341.8281     13.0   1233.1816   2108.6465  0.0000  FIFO_MEM_CNTRL_test_1
+FIFO_BLOCK/FIFO_RD_BLOCK            427.1421      1.7    163.5613    263.5808  0.0000  FIFO_RD_test_1
+FIFO_BLOCK/FIFO_WR_BLOCK            427.1421      1.7    163.5613    263.5808  0.0000  FIFO_WR_test_1
+PULSE_GEN_BLOCK                      71.7787      0.3      5.8835     65.8952  0.0000  PULSE_GEN_test_1
+RST_SYNC_BLOCK_U1                    65.8952      0.3      0.0000     65.8952  0.0000  RST_SYNC_test_0
+RST_SYNC_BLOCK_U2                    65.8952      0.3      0.0000     65.8952  0.0000  RST_SYNC_test_1
+SYS_CTRL_BLOCK                      840.1638      3.3    576.5830    263.5808  0.0000  SYS_CTRL_test_1
+UART_TOP_BLOCK                     3707.7818     14.4      7.0602      0.0000  0.0000  UART_TOP_test_1
+UART_TOP_BLOCK/UART_RX_BLOCK       2285.1514      8.9      7.0602      0.0000  0.0000  UART_RX_test_1
+UART_TOP_BLOCK/UART_RX_BLOCK/FSM_BLOCK
+                                    417.7285      1.6    318.8857     98.8428  0.0000  FSM_test_1
+UART_TOP_BLOCK/UART_RX_BLOCK/data_sampling_BLOCK
+                                    577.7597      2.2    445.9693    131.7904  0.0000  data_sampling_test_1
+UART_TOP_BLOCK/UART_RX_BLOCK/deserializer_BLOCK
+                                    411.8450      1.6    148.2642    263.5808  0.0000  deserializer_test_1
+UART_TOP_BLOCK/UART_RX_BLOCK/edge_bit_counter_BLOCK
+                                    621.2976      2.4    324.7692    296.5284  0.0000  edge_bit_counter_test_1
+UART_TOP_BLOCK/UART_RX_BLOCK/parity_check_BLOCK
+                                    154.1477      0.6    111.7865     42.3612  0.0000  parity_check_test_1
+UART_TOP_BLOCK/UART_RX_BLOCK/stop_check_BLOCK
+                                     55.3049      0.2     12.9437     42.3612  0.0000  stop_check_test_1
+UART_TOP_BLOCK/UART_RX_BLOCK/strt_check_BLOCK
+                                     40.0078      0.2      7.0602     32.9476  0.0000  strt_check_test_1
+UART_TOP_BLOCK/UART_TX_BLOCK       1415.5701      5.5      7.0602      0.0000  0.0000  UART_TX_test_1
+UART_TOP_BLOCK/UART_TX_BLOCK/MUX_block
+                                     34.1243      0.1     34.1243      0.0000  0.0000  MUX
+UART_TOP_BLOCK/UART_TX_BLOCK/fsm_block
+                                    189.4487      0.7     90.6059     98.8428  0.0000  fsm_test_1
+UART_TOP_BLOCK/UART_TX_BLOCK/parityCalc_block
+                                    450.6761      1.8    187.0953    263.5808  0.0000  parityCalc_test_1
+UART_TOP_BLOCK/UART_TX_BLOCK/serializer_block
+                                    734.2608      2.9    283.5847    450.6761  0.0000  serializer_test_1
+mux_RST                              11.7670      0.0     11.7670      0.0000  0.0000  mux2X1_5
+mux_RST_SYNC_BLOCK_U1                11.7670      0.0     11.7670      0.0000  0.0000  mux2X1_4
+mux_RST_SYNC_BLOCK_U2                11.7670      0.0     11.7670      0.0000  0.0000  mux2X1_3
+mux_RX_CLK                           11.7670      0.0     11.7670      0.0000  0.0000  mux2X1_1
+mux_TX_CLK                           11.7670      0.0     11.7670      0.0000  0.0000  mux2X1_2
+mux_ref                              15.2971      0.1     15.2971      0.0000  0.0000  mux2X1_6
+mux_uart                             11.7670      0.0     11.7670      0.0000  0.0000  mux2X1_0
+register_BLOCK                     7150.8061     27.8   2587.5634   4563.2428  0.0000  register_test_1
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------
+Total                                                  14378.0975  11371.6292  0.0000
+
+1
